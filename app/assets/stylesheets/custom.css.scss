@@ -1,4 +1,10 @@
 @import "bootstrap";
+/* mixins, variables, etc. */	
+@mixin box sizing {
+	-mox-box-sizing: border-box;
+	-webkit-box-sizing: boder-box;
+	box-sizing: border-box;
+}
 
 /* universal */
 
@@ -93,4 +99,14 @@ footer ul {
 footer ul li{
 	float: left;
 	margin-left: 10px;
+}
+
+/*testing*/
+
+.debug_dump{
+	clear: both;
+	floot: left;
+	width: 100%;
+	margin-top: 45px; 
+	@include box_sizing;
 }
